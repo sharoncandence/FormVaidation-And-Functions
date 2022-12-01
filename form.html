@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form id="create-account-form">
+        <div class="title">
+            <h2>Create Account</h2>
+        </div>
+        <!-----user-name----->
+        <div class="input-group ">
+            <label for="username">Name</label>
+            <input type="text" id="username" placeholder="name" name="username">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <span>Error Message</span>
+        </div>
+        <!-----Email--------->
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" name="email">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <span>Error Message</span>
+        </div>
+        <!-------password---->
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" name="password">
+            <i class="fa fa-check-circle" aria-hidden="true"></i> 
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <span>Error Message</span>
+        </div>
+        <!---confirm password-->
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="password" name="confirm-password">
+            <i class="fa fa-check-circle" aria-hidden="true"></i> 
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <span>Error Message</span>
+        </div>
+<button type="submit" class="btn">Submit</button>
+
+
+    </form>
+    <script src="form.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in javascript</title>
+</head>
+<body>
+    <div id="add"></div>
+<!-- question one -->
+    <script>
+        function sum(x,y){
+            return x+y;
+
+}
+document.getElementById('add').innerHTML=sum(10,5,linebreak);
+
+//question two
+var linebreak='<br></br>'
+const n=10;
+function square(){
+    for(i=1;i<=n;i++)
+    document.write('\nthe square of '+i + 'is' + i*i,linebreak);
+
+}
+square()
+
+//question 3
+const num1=prompt("enter first number"," ",linebreak)
+document.write('First number',num1)
+const num2=prompt("Enter second number","");
+document.write('second Number',num2)
+const num3=prompt("Enter third number","");
+document.write('Third number',num3)
+function Maxnumber(){
+    let maximum=0;
+    if(num1>num2){
+        maximum=num1
+    }else{
+        maximum=num2
+    }
+    if(num3>maximum){
+        maximum=num3;
+    }
+    document.write('maximum is',maximum=Math.max(num1,num2,num3));
+}
+Maxnumber()
+    </script>
+</body>
+</html>

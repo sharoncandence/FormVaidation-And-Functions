@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeric form</title>
+</head>
+<body>
+    <form>
+        <h2>Numeric Form</h2>
+        <label for="tel">Enter contact</label>
+        <input id="tel" name="number" type="tel" maxlength="10" onsubmit="submitContact()" maxlength="10">
+        <br>
+        <div id="contact-err"></div>
+        <button onsubmit=" return submitForm()">Enter</button>
+        <div id="error"></div>
+<script>
+const contact=document.getElementById("contact-err");
+const submit_error=document.getElementById("error");
+    
+            
+     function submitContact(){
+                const number =  document.getElementById("tel").value;
+                if(number.length===0){
+                    contact.innerHTML="contact is required";
+                    return false;
+                }
+                if(!number.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\./]?[0-9]{4,6}$/)){
+                    contact.innerHTML="contact doesnot match";
+                    return  false;
+                }
+            }
+            function submitForm(){
+                if(!submitContact()){
+                    submit_error.innerHTML="only numerics";
+                    return false
+                }
+            }
+        
+        </script>
+    </form>
+</body>
+</html>
